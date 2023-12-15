@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <!-- Kumbh sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Kumbh sans -->
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+
+    <div class="nav-left">
+      <div class="hamburger" id="hamburger"></div>
+      <img src="images/logo.svg" alt="" class="logo">
+      
+      <ul class="links">
+      <a href="#" class="link">Collections</a>
+      <a href="#" class="link">Men</a>
+      <a href="#" class="link">Women</a>
+      <a href="#" class="link">About</a>
+      <a href="#" class="link">Contact</a>
+    </ul>
+  </div>
+  <div class="profile">
+    <img id="card" src="images/icon-cart.svg" alt="" class="cart">
+    <div class="profile-img"></div>
+  </div>
+</div>
+</nav>
+<main class="main" id="main">
+
+  <div class="left">
+    <div class="big-img" id="image-modal-open"></div>
+    <div class="img-flex">
+      <div class="small-img img-1"></div>
+      <div class="small-img img-2"></div>
+      <div class="small-img img-3"></div>
+      <div class="small-img img-4"></div>
+    </div>
+  </div>
+  <div class="right">
+    <p class="phar color upper mb-mid">Sneaker Company</p>
+
+    
+    <h1 class="header mb-big">Fall Limited Edition Sneakers</h1>
+    
+    <p class="phar mb-mid">
+      These low-profile sneakers are your perfect casual wear companion. Featuring a
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p>
+    <div class="flex-res">
+
+      <div class="flex">
+        
+        <div class="price">$125.00</div>
+        <p class="phar color upper bg-trans">50%</p>
+      </div>
+      <p class="phar max-price">$250.00</p>
+    </div>
+    <div class="btn-cont mt-big">
+      <div class="inner-btn-cont">
+
+        <div id="minus" class="btn btn-flex minus color">-</div>
+        <div id="count" class="btn btn-flex count btn">0</div>
+        <div id="plus" class="btn btn-flex plus color">+</div>
+      </div>
+      <button id="add" class="btn add-to-card"><img src="images/icon-cart2.svg" alt="" class="add-cart"><p>Add to cart</p></button>
+    </div>
+    </div>
+    <dialog data-modal class="card-modal">
+      <h2 class='card-header'>Card</h2>
+      <div class="card-body">Your card is empty</div>
+    </dialog>
+    <dialog data-modal-image class="image-modal">
+      <div class="modal-close"></div>
+      <div class="modal-image-big">
+        <div id="previous"></div>
+        <div id="next"></div>
+      </div>
+      <div class="modal-image-flex">
+        <div class="modal-item modal-item-1 active-modal-item" data-index="1"></div>
+        <div class="modal-item modal-item-2" data-index="2"></div>
+        <div class="modal-item modal-item-3" data-index="3"></div>
+        <div class="modal-item modal-item-4" data-index="4"></div>
+      </div>
+    </dialog>
+</main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
